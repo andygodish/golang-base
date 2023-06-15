@@ -1,8 +1,8 @@
-FROM golang:1.20 as dev
+FROM golang:1.20.5 as dev
 
 WORKDIR /work
 
-FROM golang:1.20 as build
+FROM golang:1.20.5 as build
 
 WORKDIR /app
 COPY ./app/* /app/
