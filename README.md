@@ -27,4 +27,10 @@ go mod init github.com/andygodish/golang-base
 From your interactive terminal (running docker container), build you hello world app:
 
 
+## Godoc
 
+The dockerfile dev target will install the godoc module automatically. Make sure you are exposing port 8000 in your `docker run` command (`-p 8000:8000`)
+
+```
+godoc -http :8000
+```
