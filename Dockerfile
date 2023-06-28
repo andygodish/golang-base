@@ -1,6 +1,12 @@
 FROM golang:1.20.5 as dev
+
+RUN useradd -m -u 1000 -s /bin/bash dev
+
 WORKDIR /work
+
 RUN go install golang.org/x/tools/cmd/godoc@latest
+
+USER 1000
 
 FROM golang:1.20.5 as build
 
