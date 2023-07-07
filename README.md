@@ -42,3 +42,15 @@ https://github.com/stretchr/testify
 ```
 go get github.com/stretchr/testify
 ```
+
+## Benchmarking
+
+func BenchmarkRepeat(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Repeat("a")
+	}
+}
+
+```
+go test -bench=.
+```
