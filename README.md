@@ -34,3 +34,11 @@ The dockerfile dev target will install the godoc module automatically. Make sure
 ```
 godoc -http :8000
 ```
+
+## Testify
+
+https://github.com/stretchr/testify
+
+```
+go get github.com/stretchr/testify
+```
