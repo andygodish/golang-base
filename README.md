@@ -61,3 +61,7 @@ Go's built-in testing toolkit features a coverage tool.
 ```
 go test -cover
 ```
+
+## Variadic Functions
+
+https://gobyexample.com/variadic-functions
