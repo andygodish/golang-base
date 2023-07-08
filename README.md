@@ -54,3 +54,10 @@ func BenchmarkRepeat(b *testing.B) {
 ```
 go test -bench=.
 ```
+## Built-in Testing Coverage
+
+Go's built-in testing toolkit features a coverage tool.
+
+```
+go test -cover
+```
