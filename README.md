@@ -16,16 +16,18 @@ docker build -t goland:dev --target dev .
 
 The `--target dev` will only build the dev base defined in your Dockerfile. 
 
+### Run the Dev Target
+
+```
+docker run -it -v ${PWD}:/work -p 8000:8000 golang:dev bash 
+```
+> port 8000 is used for the godoc command below..
+
 ## Go Module
 
 ```
 go mod init github.com/andygodish/golang-base
 ```
-
-## Build
-
-From your interactive terminal (running docker container), build you hello world app:
-
 
 ## Godoc
 
