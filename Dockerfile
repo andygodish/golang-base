@@ -3,6 +3,7 @@ FROM golang:1.20.5 as dev
 WORKDIR /work
 
 RUN go install golang.org/x/tools/cmd/godoc@latest
+RUN go install github.com/kisielk/errcheck@latest
 
 FROM golang:1.20.5 as build
 
