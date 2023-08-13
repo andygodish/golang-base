@@ -11,8 +11,10 @@ Once built, simply run `docker run -it -v ${PWD}:/work go sh`. The use of the vo
 ### Build Local Development Container
 
 ```
-docker build -t goland:dev --target dev .
+docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t golang:dev --target dev .
 ```
+
+The `--build-arg`s map your local user to the default used on the dockerfile's dev target. 
 
 The `--target dev` will only build the dev base defined in your Dockerfile. 
 
